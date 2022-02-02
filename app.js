@@ -75,7 +75,7 @@ io.on('connection', (socket) => {
   socket.on('join', (user) => {
     //console.log('Un cliente se ha conectado')
     const usuario = nuevoUsuario(socket.id, user.name, user.email)
-    console.log(usuario)
+    ///console.log(usuario)
     socket.emit(
       'mensaje',
       formatoMensaje('Bot', `¡Bienvenido ${usuario.username}!`)

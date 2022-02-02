@@ -1,0 +1,17 @@
+<nav class='navbar navbar-info bg-info'>
+  <div class='container-fluid'>
+    <span class='navbar-brand mb-0 h1'> </span>
+    <ul class='navbar-nav me-auto mx-5'>
+      <li class='nav-item'>
+        {{#if desconectado}}
+          <h1>{{title}}</h1>
+        {{else}}
+          <h1>{{title}}</h1>
+          <a id='botonSalir' class='btn btn-sm btn-danger' href={{path}}>
+            {{link}}
+          </a>
+        {{/if}}
+      </li>
+    </ul>
+  </div>
+</nav>
